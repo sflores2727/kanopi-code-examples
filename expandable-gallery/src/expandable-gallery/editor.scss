@@ -1,0 +1,22 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-kanopi-example-expandable-gallery {
+	.block-editor-block-list__layout{
+		display: grid;
+		grid-template-columns: repeat(var(--items-per-row), 1fr);
+		row-gap: 40px;
+		-moz-column-gap: 65px;
+		column-gap: 65px;
+	}
+	h3,p{
+		max-width: 100%;
+	}
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kanopi-example/expandable-gallery-item",
+  "version": "0.1.0",
+  "title": "Expandable Gallery Item",
+  "category": "widgets",
+  "icon": "plus",
+  "description": "Displays an expandable gallery item",
+  "keywords": [
+    "expand",
+    "gallery",
+    "item"
+  ],
+  "example": {},
+  "supports": {
+    "html": false,
+    "reusable": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "object",
+      "default": null
+    },
+    "description": {
+      "type": "string"
+    },
+    "expandable_text": {
+      "type": "string"
+    },
+    "hideImage": {
+      "type": "boolean",
+      "default": false
+    },
+    "hideDescription": {
+      "type": "boolean",
+      "default": false
+    },
+    "hideExpandableText": {
+      "type": "boolean",
+      "default": false
+    },
+    "id": {
+      "type": "string"
+    }
+  },
+  "parent": [
+    "kanopi-example/expandable-gallery"
+  ],
+  "textdomain": "expandable-gallery",
+  "editorScript": "file:./index.js"
+}
